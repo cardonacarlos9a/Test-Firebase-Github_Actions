@@ -1,0 +1,74 @@
+@import url('https://fonts.google.com/specimen/Fredoka?query=fredoka+&preview.size=32');
+
+:root {
+  --primary-color: #522f1f;
+  --secondary-color: #ea8b82;
+  --third-color: #fff5eb;
+  --accent-color: #fdcb2a;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--third-color);
+}
+
+
+main h1{
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form-input-material {
+  --input-default-border-color:var(--primary-color) ;
+  --input-border-bottom-color: var(--primary-color);
+}
+
+.form-input-material{
+  position: relative;
+  padding: 0;
+}
+
+.form-input-material label{
+  background-color: var(--third-color);
+  position: absolute;
+  top: 0;
+  top: -0.8em;
+  left: .8em;
+  padding: 0 10px;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 15px;
+}
+
+.form-input-material input {
+  background-color: transparent !important;
+  padding: .8rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  border: solid 1px gray !important;
+  width: 100%;
+  font-size: 1em;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 50px 40px;
+  color: var(--primary-color);
+  background: var(--third-color);
+  border: solid 1px var(--primary-color);
+  border-radius: 10px;
+}
+
+.login-form .form-input-material {
+  margin: 12px 0;
+}
